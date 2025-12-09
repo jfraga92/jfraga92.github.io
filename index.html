@@ -1,5 +1,19 @@
 <!DOCTYPE html>
-<html lang="pt-PT"><head><script>(function(firebaseConfig, initialAuthToken, appId) {
+<html lang="pt-PT"><head>
+    <!-- 
+        ========================================================================
+        ÁREA DE METADADOS PARA PARTILHA (WHATSAPP, FACEBOOK, ETC.)
+        ========================================================================
+        
+        DICA ESPECÍFICA PARA WHATSAPP:
+        1. A imagem DEVE ser um URL completo (https://...).
+        2. Imagens quadradas (ex: 400x400) ou retangulares (1200x630) funcionam bem.
+        3. Tenta manter a imagem abaixo de 300KB para carregar rápido no telemóvel.
+    -->
+
+
+
+<script>(function(firebaseConfig, initialAuthToken, appId) {
         window.__firebase_config = firebaseConfig;
         window.__initial_auth_token = initialAuthToken;
         window.__app_id = appId;
@@ -553,7 +567,41 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
 })();</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Story ADS - Caderneta de Cromos</title>
+    <!-- 1. Título (Aparece a negrito na mensagem do WhatsApp) -->
+    <title>Coleção de Cromos da Natação | ADS</title>
+    <meta property="og:title" content="Coleção de Cromos da Natação 🏊‍♂️ | Completa a Caderneta!">
+    <meta name="twitter:title" content="Coleção de Cromos da Natação 🏊‍♂️ | Completa a Caderneta!">
+
+    <!-- 2. Descrição (Aparece por baixo do título, em texto mais pequeno) -->
+    <meta name="description" content="Junta-te à coleção digital! Troca cromos dos teus nadadores favoritos, completa a caderneta do nosso clube.">
+    <meta property="og:description" content="Abre as saquetas e troca repetidos com a equipa. Não deixes a tua caderneta incompleta!">
+
+
+    <!-- 3. Imagem de Preview (O mais importante para o WhatsApp) 
+         NOTA: O URL tem de ser ABSOLUTO (começar com https://).
+         (Troquei a imagem para uma de natação)
+    -->
+    <meta property="og:image" content="https://jfraga92.github.io/logo.png?q=80&w=1200&h=630&auto=format&fit=crop">
+    <meta property="og:image:secure_url" content="https://jfraga92.github.io/logo.png?q=80&w=1200&h=630&auto=format&fit=crop">
+    <meta property="og:image:type" content="image/jpeg">
+    <!-- Definir a largura e altura ajuda o WhatsApp a carregar o preview instantaneamente -->
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    
+    <meta name="twitter:image" content="https://jfraga92.github.io/logo.png?q=80&w=1200&h=630&auto=format&fit=crop">
+
+    <!-- 4. URL Canónico -->
+    <meta property="og:url" content="https://jfraga92.github.io/">
+    
+    <!-- 5. Tipo -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_PT">
+
+    <!-- 
+        ========================================================================
+        FIM DA ÁREA DE METADADOS
+        ========================================================================
+    -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;600;700&amp;family=Montserrat:wght@400;700;900&amp;display=swap" rel="stylesheet">
